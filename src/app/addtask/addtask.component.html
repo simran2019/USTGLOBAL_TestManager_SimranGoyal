@@ -1,0 +1,20 @@
+<form action="" #register = 'ngForm' (ngSubmit) = postDetails(register)>
+<div class="container">
+        
+    <div class="col-md-6 mt-5  card card-body" style="margin-left: 20%">  
+            <h3>Register</h3>
+            
+        <div class="form-group" >
+            <input type="hidden" name="id" #id = 'ngModel' [(ngModel)] = 'firebaseservice.selectuser.id' >
+           
+        <label for="addtask">Add Task</label> 
+        <input type="text" class="form-control" name="name"  #name = 'ngModel' [(ngModel)] = 'firebaseservice.selectuser.name'  aria-describedby="helpId" placeholder="" text>
+        <small id="helpId" class="form-text text-muted">Help text</small>
+        <br>
+        <button type="submit" class="btn btn-success">submit</button>
+      </div>
+   
+    </div>
+
+</div>
+</form>
